@@ -2,45 +2,42 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import logo from'./logo.svg'
 
-const colors = {
-  babyBlue: '#ade0ff',
-  blue: '#1447FF',
-  gray: '#7d7d7d',
-  white: '#e4eaed',
-  black: '#262829'
+const colorPalette = {
+  grayLight: '#757575',
+  grayMedium: '#333333',
+  grayRegular: '#4D4D4D',
+  grayDark: '#212121',
+  primaryBlue: '#3596FF',
 }
 
 const appName = 'Descomplica Med'
 
 const App = () => {
+  const appStyle = { backgroundColor: colorPalette.grayDark, minHeight: '100vh', color: 'white'}
+
   return (
-    <div>
+    <div style={appStyle}>
       <NavBar />
     </div>
   )
 }
 
 const NavBar = () => {
-  const navbarStyle = { backgroundColor: colors.blue }
-  const logoIconStyle = { color: colors.babyBlue, paddingRight: 8 }
-  const brandLinkStyle = { color: colors.babyBlue, fontWeight: 500, fontSize: 22 }
+  const navbarStyle = { backgroundColor: colorPalette.grayMedium }
+  const logoContainerStyle = {justifyContent: 'center'}
 
   return (
-    <nav class='navbar' style={navbarStyle}>
-      <div class='container-fluid'>
-        <a class='navbar-brand'
-          href='#'
-          style={brandLinkStyle}>
-          <i class='fa-solid fa-comment-medical fa-lg'
-            style={logoIconStyle}></i>
-          {appName}
+    <nav class="navbar" style={navbarStyle}>
+      <div class="container" style={logoContainerStyle}>
+        <a class="navbar-brand" href="#">
+          <img src={logo} alt="Descomplica Med" width="40"/>
         </a>
       </div>
     </nav>
   )
 }
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
