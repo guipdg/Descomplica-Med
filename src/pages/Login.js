@@ -12,23 +12,25 @@ const Login = () => {
         <div>
             <UnauthNavbar />
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 66px)' }}>
-                <Container>
-                    <div>
-                        <h5 align='center' style={titleStyle}>Acesse sua Conta</h5>
-                        <hr style={lineStyle} />
-                        <LoginForm />
-                        <div align='center'>
-                            <Button text={'Entrar'} />
+                <div>
+                    <Container>
+                        <div>
+                            <h5 align='center' style={titleStyle}>Acesse sua Conta</h5>
+                            <hr style={lineStyle} />
+                            <LoginForm />
+                            <div align='center'>
+                                <Button text={'Entrar'} />
+                            </div>
                         </div>
-                        <p className='link' align='center' style={{ fontSize: 14 }}>
+                    </Container>
+                    <div align='center' style={{ paddingTop: 20, fontSize: 14 }}>
+                        <a style={{ color: 'var(--color-blue-primary)' }} href=''>
                             Ainda não possui conta?
-                            <a style={{ color: 'var(--color-blue-primary)' }} href=''>
-                                <br />
-                                <b> Clique aqui para cadastrar</b>
-                            </a>
-                        </p>
+                            <br />
+                            <b> Clique aqui para cadastrar</b>
+                        </a>
                     </div>
-                </Container>
+                </div>
             </div>
         </div>
     )
