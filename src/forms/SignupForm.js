@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/global.css'
 
-const SignupForms = ({ colorPalette }) => {
-    const inputStyle = { backgroundColor: colorPalette.grayMedium, border: `1px solid ${colorPalette.grayRegular}`, color: '#FFF' }
+const SignupForms = () => {
+    const inputStyle = { backgroundColor: 'var(--color-gray-medium)', border: '1px solid var(--color-gray)', color: 'var(--color-white)' }
     const formsStyle = { marginTop: 40, marginBottom: 60 }
 
     return (

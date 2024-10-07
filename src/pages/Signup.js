@@ -5,7 +5,7 @@ import Container from '../components/Container';
 import { UnauthNavbar } from '../components/Navbar';
 
 
-const Signup = ({ colorPalette }) => {
+const Signup = () => {
     const lineStyle = { border: '1px solid var(--color-gray)', marginTop: 15 }
     const titleStyle = { fontWeight: 400 }
 
@@ -17,9 +17,9 @@ const Signup = ({ colorPalette }) => {
                     <div>
                         <h5 align='center' style={titleStyle}>Cadastre-se</h5>
                         <hr style={lineStyle} />
-                        <SignupForms colorPalette={colorPalette} />
+                        <SignupForms />
                         <div align='center'>
-                            <Button colorPalette={colorPalette} text={'Cadastrar'} />
+                            <Button text={'Cadastrar'} />
                         </div>
                     </div>
                 </Container>
