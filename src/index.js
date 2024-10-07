@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import { AuthNavbar, UnauthNavbar } from './components/Navbar'
+import Signup from './pages/Signup'
+import './styles/global.css'
 
 const appName = 'Descomplica Med'
 
@@ -20,7 +22,7 @@ const App = () => {
 
   return (
     <div style={appStyle}>
-      <UnauthNavbar colorPalette={colorPalette}/>
+      <Signup colorPalette={colorPalette}/>
     </div>
   )
 }

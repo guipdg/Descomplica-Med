@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const logoContainerStyle = {justifyContent: 'center'}
 
-const AuthNavbar = ({colorPalette}) => {
-    const navbarStyle = { backgroundColor: colorPalette.grayMedium, height: 66}
+const AuthNavbar = () => {
+    const navbarStyle = { backgroundColor: 'var(--color-gray-medium)', height: 66}
   
     return (
       <nav class='navbar' style={navbarStyle}>
@@ -19,9 +19,9 @@ const AuthNavbar = ({colorPalette}) => {
     )
 }
 
-const UnauthNavbar = ({colorPalette}) => {
+const UnauthNavbar = () => {
   const navbarStyle = { 
-    background: `linear-gradient(to bottom right, ${colorPalette.primaryBlue}, ${colorPalette.secondaryBlue})`, 
+    background: 'linear-gradient(to bottom right, var(--color-blue-primary), var(--color-blue-secondary))', 
     height: 66}
   
   return (
